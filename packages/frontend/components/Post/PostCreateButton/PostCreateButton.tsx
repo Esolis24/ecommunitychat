@@ -26,7 +26,7 @@ const PostCreateButton: FC<PostCreateButtonProps> = ({ channel, queryKey }) => {
       return;
     }
 
-    dispatch(openAlert({ type: AlertTypes.Error, message: 'To create a post, please first create a channel.' }));
+    dispatch(openAlert({ type: AlertTypes.Error, message: 'Para crear un post debe existir primero un canal.' }));
   };
 
   return (
